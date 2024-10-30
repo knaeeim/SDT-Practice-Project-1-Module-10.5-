@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is our Home Page </h1>
+    <h1>Welcome to Our Home Page</h1>
+    <!-- To get a length of property -->
+    <h4>{{ list | length }}</h4>
+    <!-- To add something with a Value -->
+    <h4>{{ list.0 | add:"4" }}</h4>
+    <!-- Add slashes -->
+    <h4>{{ str | addslashes}}</h4>
+    <!-- Capital the first Letter -->
+    <h4>{{ name | capfirst }}</h4>
+    <!-- center the value -->
+    <h4>{{ name | center:"15"}}</h4>
+    <!-- cut the spaces from a str -->
+    <h4>{{ str | cut:" " }}</h4>
+    <!-- date time -->
+    {{ date | date:"D d M Y" }} 
+    <!-- default Value -->
+    <h4>{{ value | default:"nothing" }}</h4>
+    <!-- dicsort -->
+    <h4>{{ list1 | dictsort:"age"}}</h4>
+    <!-- divisible by -->
+    <h4>{{ list.2 | divisibleby:'3'}}</h4>
+    <!-- file size formate -->
+    <h4>{{ val | filesizeformat }}</h4>
+    <!-- first Value -->
+    <h4>{{ list | first }}</h4>
+    <!-- join list -->
+    <h4>{{ list | join:" " }}</h4>
+    <!-- last Value -->
+    <h4>{{ list | last }}</h4>
+    <!-- length -->
+    <h4>{{ str | length }}</h4>
+    <!-- line Number -->
+    <h4>{{ str | linenumbers }}</h4>
+    <!-- lower Case -->
+    <h4>{{str | lower}}</h4>
+    <!-- make kist -->
+    <h4>{{ str | make_list }}</h4>
+    <h4>{{ val | make_list }}</h4>
+    <!-- random -->
+    <h4>{{ list | random }}</h4>
+    <!-- slice -->
+    <h4>{{ list | slice:":2" }}</h4>
+    <!-- sugify -->
+    <h4>{{ str | slugify }}</h4>
+    <!-- time -->
+    <h4>{{ date | time:"H:i" }}</h4>
+    <!-- title -->
+    <h4>{{ str | title }}</h4>
+    <!-- upper -->
+    <h4>{{ str | upper }}</h4>
+    <h4>{{ str | wordcount }}</h4>
+</body>
+</html>
